@@ -1,0 +1,55 @@
+package edu.ifpr.teste;
+
+public class Aluno {
+
+	private String nome, cpf;
+	private int matricula;
+	private float[] notas;
+
+	public Aluno(String nome, String cpf, int matricula, int quantidadeEtapas) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.matricula = matricula;
+		this.notas = new float[quantidadeEtapas];
+	}
+	
+	public void imprimirCarteirinha() {
+		System.out.println("Aluno: " + nome);
+		System.out.println("Matricula: " + matricula);
+		System.out.println("CPF: " + cpf);
+		System.out.println("--------------------------");
+	}
+	
+	public void lancarNotas(int etapa, float nota) {
+		if(etapa > 0 && etapa <= notas.length) {
+			notas[etapa - 1] = nota;
+		}
+		else {
+			System.err.println("Coloque uma etapa válida. O aluno possui " + notas.length + " etapas.");
+		}
+	}
+	
+	public void emitirBoletim() {
+		System.out.println("Nome: " + nome);
+		System.out.println("Matrícula: " + matricula);
+		System.out.println(" ");
+		
+		for (int i = 0; i < notas.length; i++) {
+			System.out.println("Etapa " + (i +1) + ": " + notas[i]);
+			System.out.println("");
+		}
+		
+		System.out.println("Média: " + calcularMedia());
+		System.out.println("--------------------------");
+	}
+	
+	private float calcularMedia() {
+		float soma = 0;
+		
+		for (float f : notas) {
+			soma += f;
+		}
+				
+		return Math.round(soma / notas.length);
+	}
+}

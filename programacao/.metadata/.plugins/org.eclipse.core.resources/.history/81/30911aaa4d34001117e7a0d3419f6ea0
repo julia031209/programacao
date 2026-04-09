@@ -1,0 +1,20 @@
+
+package teste;
+
+public class ProgramaPrincipal {
+
+	public static void main(String[] args) {
+		Aluno aluno1 = new Aluno("Julia", "12334580945", 1, 3);
+		Aluno aluno2 = new Aluno("Maria", "12345678910", 2, 3);
+		
+		aluno1.imprimirCarteirinha();
+		aluno2.imprimirCarteirinha();
+		
+		aluno1.lancarNotas(1, 8);
+		aluno1.lancarNotas(2, 9);
+		aluno1.lancarNotas(3, 7);
+		aluno1.lancarNotas(4, 8);
+		
+		aluno1.emitirBoletim();
+	}
+}

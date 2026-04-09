@@ -1,0 +1,15 @@
+package teste;
+
+public class Aluno {
+
+	private String nome, cpf;
+	private int matricula;
+	private float[] notas;
+
+	public Aluno(String nome, String cpf, int matricula, int quantidadeEtapas) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.matricula = matricula;
+		this.notas = new float[quantidadeEtapas];
+	}
+}

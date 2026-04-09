@@ -1,0 +1,19 @@
+package edu.ifpr.exercicio1;
+
+public class Livro {
+
+	private String titulo, autor;
+	private int numPaginas;
+	
+	public Livro(String titulo, String autor, int numPaginas) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.numPaginas = numPaginas;
+	}
+	
+	public void exibirDetalhes() {
+		System.out.println("Autor: " + autor);
+		System.out.println("Título: " + titulo);
+		System.out.println("Número de páginas: " + numPaginas);
+	}
+}

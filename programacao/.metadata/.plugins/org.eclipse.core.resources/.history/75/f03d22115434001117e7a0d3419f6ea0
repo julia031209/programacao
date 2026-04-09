@@ -1,0 +1,17 @@
+package edu.ifpr.exercicio2;
+
+public class Cachorro {
+
+	private String nome, raca;
+	private int idade;
+	
+	public Cachorro(String nome, String raca, int idade) {
+		this.nome = nome;
+		this.raca = raca;
+		this.idade = idade;
+	}
+	
+	public void latir() {
+		System.out.println("O " + nome + " au au");
+	}
+}
