@@ -1,0 +1,21 @@
+package edu.ifpr.exercicio3;
+
+public class ProgramaPrincipal {
+
+	public static void main(String[] args) {
+
+		Produto notbook = new Produto("Notbook", 1200.00, 56);
+		Produto desktop = new Produto("Desktop", 2500.00, 8);
+		
+		notbook.adicionarEstoque(10);
+		notbook.aplicarDesconto(10);
+		notbook.mostrarInformacoes();
+		
+		System.out.println("----------------------");
+		
+		desktop.adicionarEstoque(2);
+		desktop.retirarEstoque(2);
+		desktop.mostrarInformacoes();
+	}
+
+}

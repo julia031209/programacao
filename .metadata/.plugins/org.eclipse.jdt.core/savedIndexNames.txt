@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\IFPR\Documents\programacao\.metadata\.plugins\org.eclipse.jdt.core
+2504463234.index
+1865797976.index
+3927496509.index

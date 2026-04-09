@@ -1,0 +1,23 @@
+package edu.ifpr.exercicio2;
+
+public class Cachorro {
+
+	private String nome, raca;
+	private int idade;
+	
+	public Cachorro(String nome, String raca, int idade) {
+		this.nome = nome;
+		this.raca = raca;
+		this.idade = idade;
+	}
+	
+	public void latir() {
+		System.out.println(nome + " está latindo: au! au!");
+	}
+	
+	public void carteirinhaCachorro() {
+		System.out.println("Nome: " + nome);
+		System.out.println("Raça: " + raca);
+		System.out.println("Idade: " + idade);
+	}
+}
